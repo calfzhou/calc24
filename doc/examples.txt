@@ -1,0 +1,108 @@
+(calc24)Input format: <num1> <num2> <num3> <num4>
+set num1 < 0 to quit.
+1 5 5 5
+The numbers you input: 1, 5, 5, 5
+5 * (5 - 1 / 5) = 24
+Found 1 equation(s).
+
+
+(calc24)Input format: <num1> <num2> <num3> <num4>
+set num1 < 0 to quit.
+3 8 3 8
+The numbers you input: 3, 8, 3, 8
+8 / (3 - 8 / 3) = 24
+Found 1 equation(s).
+
+
+(calc24)Input format: <num1> <num2> <num3> <num4>
+set num1 < 0 to quit.
+6 6 6 6
+The numbers you input: 6, 6, 6, 6
+6 + 6 + 6 + 6 = 24
+6 * 6 - 6 - 6 = 24
+Found 2 equation(s).
+
+
+(calc24)Input format: <num1> <num2> <num3> <num4>
+set num1 < 0 to quit.
+1 3 5 7
+The numbers you input: 1, 3, 5, 7
+(5 + 7) * (3 - 1) = 24
+(1 + 5) * (7 - 3) = 24
+Found 2 equation(s).
+
+
+(calc24)Input format: <num1> <num2> <num3> <num4>
+set num1 < 0 to quit.
+2 4 8 10
+The numbers you input: 2, 4, 8, 10
+2 + 4 + 8 + 10 = 24
+4 * 10 - 2 * 8 = 24
+4 * (2 * 8 - 10) = 24
+8 * (10 - 4) / 2 = 24
+4 * (10 - 8 / 2) = 24
+8 * (2 + 10) / 4 = 24
+4 * (10 - 2) - 8 = 24
+8 + 2 * 10 - 4 = 24
+2 + 4 * 8 - 10 = 24
+(8 + 4 * 10) / 2 = 24
+Found 10 equation(s).
+
+
+(calc24)Input format: <num1> <num2> <num3> <num4>
+set num1 < 0 to quit.
+1 2 3 4
+The numbers you input: 1, 2, 3, 4
+4 * (1 + 2 + 3) = 24
+1 * 2 * 3 * 4 = 24
+2 * 3 * 4 / 1 = 24
+(1 + 3) * (2 + 4) = 24
+Found 4 equation(s).
+
+
+##################################################
+
+# Run with `-a` command line option.
+
+Input format: <count_of_numbers> <num1> ... <goal>
+set count_of_numbers <= 0 to quit.
+5 6 6 6 6 6 24
+The numbers you input: 6, 6, 6, 6, 6
+(6 + 6) * (6 + 6) / 6 = 24
+6 * (6 - (6 + 6) / 6) = 24
+6 * (6 - 6 / 6) - 6 = 24
+Found 3 equation(s).
+
+
+Input format: <count_of_numbers> <num1> ... <goal>
+set count_of_numbers <= 0 to quit.
+6 6 6 6 6 6 6 24
+The numbers you input: 6, 6, 6, 6, 6, 6
+6 + 6 + 6 + 6 + 6 - 6 = 24
+6 + 6 + 6 * (6 + 6) / 6 = 24
+6 * (6 + 6 + 6 + 6) / 6 = 24
+6 * (6 + 6 - 6) - 6 - 6 = 24
+6 + 6 * 6 - 6 - 6 - 6 = 24
+6 * 6 - 6 * (6 + 6) / 6 = 24
+6 * 6 * 6 / 6 - 6 - 6 = 24
+6 * (6 * 6 - 6 - 6) / 6 = 24
+6 + 6 + 6 + 6 * 6 / 6 = 24
+6 + 6 * 6 * 6 / (6 + 6) = 24
+(6 / 6 + 6 / 6) * (6 + 6) = 24
+6 + 6 * (6 + 6 + 6) / 6 = 24
+6 * 6 - 6 - 6 * 6 / 6 = 24
+6 * (6 * 6 - 6) / 6 - 6 = 24
+6 * (6 - 6 / 6 - 6 / 6) = 24
+Found 15 equation(s).
+
+
+Input format: <count_of_numbers> <num1> ... <goal>
+set count_of_numbers <= 0 to quit.
+6 1 2 3 4 7 25 573
+The numbers you input: 1, 2, 3, 4, 7, 25
+25 * (7 + 4 * (1 + 3)) - 2 = 573
+1 + 4 * (2 * 3 * 25 - 7) = 573
+3 * ((2 + 4) * (7 + 25) - 1) = 573
+1 + (25 - 3) * (4 * 7 - 2) = 573
+3 * (2 * (4 * 25 - 1) - 7) = 573
+Found 5 equation(s).
