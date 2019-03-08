@@ -30,29 +30,28 @@ int main(int argc, char **argv)
 // 处理命令行参数
 void deal_arg(int argc, char **argv)
 {
-    static const char *readme = "format: Calc24 [/A] [/E] [/O] [/H]\n"
-                                "/A 计算任意个数，任意目标\n"
-                                "/E 输出算式时不省略括号\n"
-                                "/O 输出结果时显示化简前后对比\n"
-                                "/H 打印帮助\n";
+    static const char *readme = "format: calc24 [-a] [-e] [-o] [-h]\n"
+                                "-a 计算任意个数，任意目标\n"
+                                "-e 输出算式时不省略括号\n"
+                                "-o 输出结果时显示化简前后对比\n"
+                                "-h 打印帮助\n";
 
     for (int i = 1; i < argc; i++)
     {
-        if (argv[i][0] != '/')
+        if (argv[i][0] != '-')
             continue;
-        switch (toupper(argv[i][1]))
+        switch (argv[i][1])
         {
-        case 'A':
+        case 'a':
             Calc_All = true;
             break;
-        case 'E':
+        case 'e':
             Simp_Exp = false;
             break;
-        case 'O':
+        case 'o':
             Simp_Out = false;
             break;
-        case 'H':
-        case '?':
+        case 'h':
             cout << readme << flush;
             exit(0);
         }
