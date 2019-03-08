@@ -226,7 +226,7 @@ int ExpTree::compnode(const ExpNode *node1, const ExpNode *node2) const
 
 ostream &operator<<(ostream &s, const ExpTree &tree)
 {
-    return tree.print(s) << " =" << tree.getroot()->value(); //.value ();
+    return tree.print(s) << " = " << tree.getroot()->value(); //.value ();
 }
 
 bool operator==(const ExpTree &tree1, const ExpTree &tree2)

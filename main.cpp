@@ -136,9 +136,9 @@ int input(Number *&numbers, Number &goal)
 inline void progress(int inc)
 {
     CurrNum += inc;
-    //cout << CurrNum << " / " << TotalNum <<
-    //	" = " << CurrNum*100/TotalNum << "%\r" << flush;
-    //return;
+    // cout << CurrNum << " / " << TotalNum <<
+    //     " = " << CurrNum*100/TotalNum << "%\r" << flush;
+    // return;
     if (CurrPerTotal != CurrNum * 100 / TotalNum)
     {
         CurrPerTotal = CurrNum * 100 / TotalNum;

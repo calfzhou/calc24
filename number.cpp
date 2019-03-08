@@ -26,7 +26,7 @@ Number &Number::HuaJian()
 
 ostream &operator<<(ostream &s, const Number &num)
 {
-    cout << " ";
+    // cout << " ";
     if (num.Fenmu == 0)
         return s << "INF";
 

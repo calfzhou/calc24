@@ -30,26 +30,26 @@ ostream &operator<<(ostream &s, const ExpNode &node)
     if (Simp_Exp)
     {
         if (!temp->isLeaf() && temp->level() < level)
-            s << " (" << *temp << " )";
+            s << "(" << *temp << ")";
         else
             s << *temp;
-        s << " " << ((IntlNode &)node).oper();
+        s << " " << ((IntlNode &)node).oper() << " ";
         temp = ((IntlNode &)node).right();
         if (!temp->isLeaf() && (temp->level() < level || (temp->level() == level && !duichen)))
-            s << " (" << *temp << " )";
+            s << "(" << *temp << ")";
         else
             s << *temp;
     }
     else
     {
         if (!temp->isLeaf())
-            s << " (" << *temp << " )";
+            s << "(" << *temp << ")";
         else
             s << *temp;
-        s << " " << ((IntlNode &)node).oper();
+        s << " " << ((IntlNode &)node).oper() << " ";
         temp = ((IntlNode &)node).right();
         if (!temp->isLeaf())
-            s << " (" << *temp << " )";
+            s << "(" << *temp << ")";
         else
             s << *temp;
     }
