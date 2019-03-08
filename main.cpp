@@ -77,7 +77,7 @@ bool Calc()
     CurrNum = 0;
     CurrPerTotal = -1;
     if (!search(subexps, count, goal))
-        cout << "Cann't find any equation." << endl;
+        cout << "Can't find any equation." << endl;
     else
         cout << "Found " << Equs_Stack.size() << " equation(s)." << endl;
     //Equs_Stack.print ();
@@ -170,13 +170,13 @@ bool search(ExpTree *subexps, int n, const Number &goal)
         }
         else
         {
-            cout << subexps[0] << " <==>" << flush;
+            cout << subexps[0] << " ==> " << flush;
             subexps[0].simplify();
             cout << subexps[0] << flush;
             if (Equs_Stack.push(subexps[0], comptree))
                 cout << endl;
             else
-                cout << " =====" << endl;
+                cout << " [known solution]" << endl;
         }
         return true;
     }
@@ -272,7 +272,7 @@ void print(ELEM *array, int n, const char *str)
     {
         cout << array[i];
         if (i < n - 1)
-            cout << ',';
+            cout << ", ";
     }
     cout << endl;
 }
